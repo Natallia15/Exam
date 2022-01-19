@@ -1,18 +1,14 @@
 public class Calculator {
     public double summa (double a, double b){
-        double c = a+b;
-                return c;
+       return a+b;
     }
     public double razn (double a, double b) {
-        double razn = a-b;
-        return razn;
+        return a-b;
             }
     public double proizv (double a, double b){
-       double proizv = a*b;
-        return proizv;
+       return a*b;
     }
     public double chas (double a, double b) {
-        double chas = a/b;
-        return chas;
+        return a/b;
     }
 }

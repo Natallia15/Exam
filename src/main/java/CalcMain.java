@@ -6,12 +6,14 @@ public class CalcMain {
     public static void main (String [] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введи число ");
-        double a = scanner.nextInt();
+        double a = scanner.nextDouble();
+        scanner.nextLine();
         System.out.println("Введи второе число ");
-          double b = scanner.nextInt();
-        System.out.println("Введи +, -, / или *");
-        Scanner scanner1 = new Scanner(System.in);
-        String s = scanner1.nextLine();
+          double b = scanner.nextDouble();
+        scanner.nextLine();
+          System.out.println("Введи +, -, / или *");
+        //Scanner scanner1 = new Scanner(System.in);
+        String s = scanner.nextLine();
         Calculator calculator = new Calculator();
         DecimalFormat dF = new DecimalFormat( "#.##" );
 

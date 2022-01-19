@@ -71,18 +71,16 @@ public class First {
         // заполнить его случайными числами, вывести на экран.
         Random random = new Random();
         DecimalFormat dF = new DecimalFormat( "#.##" );
-        double leftLimit = 0;
-        double rightLimit = 10;
         double [][] array = new double[18][11];
         for (int q=0; q<18; q++){
             for (int k=0; k<11; k++ ){
-                array[q][k]= random.nextDouble()* (rightLimit - leftLimit)+leftLimit;
-                System.out.print(dF.format(array[q][k])+" ");
+                array[q][k]= Math.random()*10;
+                System.out.print(array[q][k]);
+
             }
             System.out.println();
         }
 
-        //4. Продемонстрировать работу конструкции try-catch-finally.
-        // (Необходимо также создать свое исключение, которое будем вызывать)
+
 
             }}

@@ -6,7 +6,7 @@ public class ArayList {
 
        ArrayList<Integer> list = new ArrayList<>();
         Random random = new Random();
-        for (int i = 1; i<11; i++){
+        for (int i = 0; i<10; i++){
             list.add(random.nextInt(100));
         }
         list.forEach(item -> {
